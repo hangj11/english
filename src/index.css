@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: #041329;
+  --color-surface: #041329;
+  --color-surface-container-low: #0a1a35;
+  --color-surface-container: #102444;
+  --color-surface-container-high: #182e54;
+  --color-surface-container-highest: #223b6a;
+  --color-on-surface: #d6e3ff;
+  --color-primary: #adc6ff;
+  --color-primary-container: #4b8eff;
+  --color-on-primary-container: #002d6f;
+  --color-outline-variant: rgba(214, 227, 255, 0.15);
+  --color-secondary: #74daa8;
+
+  --font-headline: "Inter", -apple-system, sans-serif;
+  --font-body: "Inter", -apple-system, sans-serif;
+  --font-label: "Inter", -apple-system, sans-serif;
+}
+
+@utility fluid-icon {
+  background: radial-gradient(circle, var(--color-primary-container) 0%, transparent 70%);
+  opacity: 0.15;
+  filter: blur(60px);
+}
+
+@utility floating-element {
+  background: linear-gradient(135deg, #adc6ff 0%, #4b8eff 100%);
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  box-shadow: 0 32px 64px rgba(214, 227, 255, 0.06);
+}
+
+@utility bg-wallpaper {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDw5W1byD9gaPkQ_ucI2Qqkn-_gBRVjlHKpLQ7Xy_TBKmRvyjrZcjGa2iv2Lv1Q5Ukuh6XseB5JOeqXE7y3uopqz6yXpATKHaMumseMdPY3WA5uPrf-Mw-sX-nKlRdT4ZwjVWKvovntAkmlvGLF5SuXYjFafyhfC6Ma8wJn7PHwq_yyFx4znNDdwScfSQLVTZCt34NALL1akfnsKk6USRjcPDzsn4bd9xceKmjr8d_NV7pm2QHb0jaPLP10xpzG5BQKu3xnHhrPgmg");
+  background-size: cover;
+  background-position: center;
+}
